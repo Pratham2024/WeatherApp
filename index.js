@@ -21,7 +21,7 @@ async function checkWeather(key){
         document.querySelector(".temp").innerHTML=data.main.temp+" C";
         document.querySelector(".wind").innerHTML=data.wind.speed+" Km/hr";
         let image = document.querySelector(".weather-icon");
-        image.src=`images/${data.weather[0].main}.png`
+        image.src=`${data.weather[0].main}.png`
 
         document.querySelector(".weather").style.display="block";
         document.querySelector(".error").style.display="none";// to show something and none is used in place of block to hide something.
